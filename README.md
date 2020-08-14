@@ -1,1 +1,1 @@
-# individualproject-client
+# individual-project
