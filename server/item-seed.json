@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ponsel",
+    "price": 5000000,
+    "stock": 25,
+    "image_url": "https://www.bhphotovideo.com/images/images500x500/samsung_sm_g973fdsblk_galaxy_s10_g973f_dual_1465794.jpg"
+  },
+  {
+    "name": "laptop",
+    "price": 9000000,
+    "stock": 15,
+    "image_url": "https://www.itgaleri.com/wp-content/uploads/2019/11/Asus-14-M409DA-Grey-500x500.jpg"
+  },
+  {
+    "name": "monitor",
+    "price": 6000000,
+    "stock": 15,
+    "image_url": "https://www.startech.com.bd/image/cache/catalog/monitor/msi/msi-mag271cr-27-144hz-gaming-monitor/msi-mag271cr-27-144hz-gaming-monitor-500x500.jpg"
+  },
+  {
+    "name": "motor sport",
+    "price": 15000000,
+    "stock": 8,
+    "image_url": "https://s2.bukalapak.com/img/2020292753/large/Body_Cover___Sarung_Motor_Gede_Moge_Harley_Davidson.png"
+  },
+  {
+    "name": "motor gede",
+    "price": 25000000,
+    "stock": 6,
+    "image_url": "https://i.pinimg.com/564x/05/9f/5e/059f5e3c31e12dab31901e64ce8959c9.jpg"
+  },
+  {
+    "name": "private jet",
+    "price": 450000000,
+    "stock": 5,
+    "image_url": "https://valleyjet.com/wp-content/uploads/2018/07/14941_0491-500x500.jpg"
+  },
+  {
+    "name": "tank",
+    "price": 595500000,
+    "stock": 4,
+    "image_url": "https://rmx.news/media/370/atc_thumb_3703bdbc602396a78530836f0eda307404aa0ce1.jpeg"
+  },
+  {
+    "name": "private island",
+    "price": 995000000,
+    "stock": 2,
+    "image_url": "https://www.privateislandnews.com/wp-content/uploads/2012/10/Inishvickillane.jpg"
+  },
+  {
+    "name": "kipas",
+    "price": 500000,
+    "stock": 88,
+    "image_url": "https://files.sirclocdn.xyz/shop-luwes/products/_200522084713_L0003528%20COSMOS%20DESK%20FAN%2012%20LDA%201_full.jpg"
+  },
+  {
+    "name": "skyview penthouse",
+    "price": 895000000,
+    "stock": 3,
+    "image_url": "https://i.pinimg.com/564x/52/87/b2/5287b2734de6b823ef624f7b94fdda14.jpg"
+  },
+  {
+    "name": "nescafe classic",
+    "price": 15000,
+    "stock": 999,
+    "image_url": "https://files.sirclocdn.xyz/shop-luwes/products/_200406143354_14.%20NESCAFE%20KOPI%20CLASSIC%20ERA%20BAG%20100%20GR_full.jpg"
+  },
+  {
+    "name": "jaket exclusive",
+    "price": 85000000,
+    "stock": 5,
+    "image_url": "https://cdn.shopify.com/s/files/1/0113/7222/products/crescent-down-works-60-40-black-down-shirt-jacket-w-pockets-2_x500.JPG?v=1510876634"
+  },
+  {
+    "name": "guitar",
+    "price": 45000000,
+    "stock": 10,
+    "image_url": "https://cdn.shopify.com/s/files/1/0117/8740/3323/products/G06-LPS14RTRC1_001_grande.jpg?v=1587096637"
+  },
+  {
+    "name": "restaurant fancy dinner",
+    "price": 9000000,
+    "stock": 10,
+    "image_url": "https://www.telegraafhotel.com/wp-content/uploads/2018/07/TLLAK_restaurant-tchaikovsky01-500x500.jpg"
+  },
+  {
+    "name": "sate padang",
+    "price": 15000,
+    "stock": 30,
+    "image_url": "https://lh3.googleusercontent.com/proxy/Iv6T3JHEZSR9UlcGrhgO2w-KRwT_10rlxdu0jwB2G22C_zzYy7IZb5gO10Ta1kfLS7Bao2blYL5uKyfzEBa8Lcc8KCELZIm0qqEPgDFjjis25nFrzMgzMg8oG9SKU6oqBcrzjYcbiK9x6YhcWCCB4CPYlrnforaAszQUB9o1lYGbJOFT"
+  },
+  {
+    "name": "mie lemonilo",
+    "price": 6000,
+    "stock": 99,
+    "image_url": "https://d3psifl1ixugq1.cloudfront.net/NPWRDS_HTC_42101_pic1_B420_1113191245.jpg"
+  }
+]
