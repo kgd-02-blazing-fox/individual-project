@@ -1,0 +1,68 @@
+{
+    "money":1000000000000,
+    "stock":[
+        {
+            "name":"Gold Chain",
+            "image_url":"https://m.media-amazon.com/images/I/51oQ6p3gj9L.jpg",
+            "price":50000000,
+            "stock":200,
+            "status":false
+        },
+        {
+            "name":"OBEY Hat",
+            "image_url":"https://i.pinimg.com/originals/9d/88/32/9d88328ad36fe3df5e6c63885d20b4fd.jpg",
+            "price":10000000,
+            "stock":500,
+            "status":false
+        },
+        {
+            "name":"Hood Scarf",
+            "image_url":"https://i.pinimg.com/originals/58/c6/37/58c637bcfd47f4a0bf4dfab4129ab04c.jpg",
+            "price":2000000,
+            "stock":150,
+            "status":false
+        },
+        {
+            "name":"Milk fo yo Mama",
+            "image_url":"https://www.ultrajaya.co.id/images/product_fullcream.jpg",
+            "price":500000,
+            "stock":1,
+            "status":false
+        },
+        {
+            "name":"That Glasses you All Know but Don't Know Where to Buy",
+            "image_url":"https://images-na.ssl-images-amazon.com/images/I/61v6R7dX0sL._UL1500_.jpg",
+            "price":5000000,
+            "stock":150,
+            "status":false
+        },
+        {
+            "name":"Gold Teeth",
+            "image_url":"https://images-na.ssl-images-amazon.com/images/I/61630i90c0L._AC_UY695_.jpg",
+            "price":500000000,
+            "stock":50,
+            "status":false
+        },
+        {
+            "name":"Rent 100 Thugs!",
+            "image_url":"https://getacclaim.wpengine.com/wp-content/uploads/2015/05/photo-300x300.jpg",
+            "price":1000000000,
+            "stock":100,
+            "status":false
+        },
+        {
+            "name":"Rent DJ Khaled Himself!",
+            "image_url":"https://www.biography.com/.image/t_share/MTUxMzUyMzc4MTU3NzA0Mzg0/dj-khaled_gettyimages-695753686.jpg",
+            "price":250000000000,
+            "stock":4,
+            "status":false
+        },
+        {
+            "name":"Rent Snoop Dawg Himself!",
+            "image_url":"https://www.biography.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTQ3NjM5ODIyNjU0MTIxMDM0/snoop_dogg_photo_by_estevan_oriol_archive_photos_getty_455616412.jpg",
+            "price":1000000000000,
+            "stock":1,
+            "status":false
+        }
+    ]
+}
