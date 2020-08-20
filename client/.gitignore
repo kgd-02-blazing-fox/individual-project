@@ -24,3 +24,6 @@ pnpm-debug.log*
 
 
 template.html
+.firebaserc
+firebase.json
+.firebase

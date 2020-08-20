@@ -38,14 +38,12 @@ export default {
       return this.$store.state.ItemList
     }
   },
-  created () {
-    this.$store.commit('resetImage')
-  },
   mounted () {
-    this.socket = io.connect('http://localhost:3000')
+    this.socket = io.connect('https://arnold-laurentius-server.herokuapp.com/')
     this.socket.emit('reset')
     this.socket.on('init', (seed) => {
       this.$store.commit('seedItem', seed)
+      this.$store.commit('resetImage')
     })
     this.socket.on('changes', (obj) => {
       this.$store.commit('changeItem', obj)

@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     money: 0,
     ItemList: [],
-    ImageUrl: ''
+    ImageUrl: 'https://i.ibb.co/VQKDCjQ/Arnold.jpg'
   },
   mutations: {
     setMoney (state, val) {
