@@ -1,5 +1,5 @@
 <template>
-  <div class="col-4 mt-3">
+  <div class="col-lg-4 col-md-6 col-sm-6 mt-3">
         <div class="card" style="">
           <img :src="item.image_url" class="card-img-top" alt="images">
           <div class="card-body">
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import io from 'socket.io-client'
+
 export default {
   name: 'ItemCard',
   props: ['item'],
@@ -46,13 +48,17 @@ export default {
         price: this.item.price,
         stock: this.item.stock
       }
-      this.$store.dispatch('addToChart', payload)
+      this.socket.emit('itemChanged', payload)
+      // this.$store.dispatch('addToChart', payload)
     }
   },
   computed: {
     priceInRupiah () {
       return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(this.item.price)
     }
+  },
+  mounted () {
+    this.socket = io.connect('http://localhost:3000')
   }
 }
 </script>

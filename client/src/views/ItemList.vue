@@ -27,6 +27,7 @@
 
 <script>
 // @ is an alias to /src
+import io from 'socket.io-client'
 import ItemCard from '../components/ItemCard'
 import ShoppingCart from '../components/ShoppingCart'
 import Alert from '../components/Alert'
@@ -51,6 +52,9 @@ export default {
     },
     closeCheckout () {
       this.isCheckout = false
+    },
+    newChange (payload) {
+      this.$store.dispatch('addToChart', payload)
     }
   },
   created () {
@@ -67,6 +71,17 @@ export default {
     alert () {
       return this.$store.state.alert
     }
+  },
+  mounted () {
+    this.socket = io.connect('http://localhost:3000')
+
+    this.socket.on('init', function () {
+      console.log('CLIENT CONNECTED IN ITEMLIST')
+    })
+
+    this.socket.on('newChange', (payload) => {
+      this.newChange(payload)
+    })
   }
 }
 </script>

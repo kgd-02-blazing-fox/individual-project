@@ -1,5 +1,5 @@
 <template>
-  <div class="container border rounded">
+  <div class="container col-lg-12 col-md-8 col-sm-12 col-xs-12 border rounded">
     <div class="container mt-2">
     <b><i class="fas fa-shopping-cart fa-lg"> </i> shopping cart</b>
     </div>
