@@ -4,7 +4,6 @@ class Controller {
   static async fetchItem(req, res) {
     try {
       const items = await Item.findAll()
-      console.log(items);
       res.status(200).json(items)
     } catch (err) {
       console.log(err);
