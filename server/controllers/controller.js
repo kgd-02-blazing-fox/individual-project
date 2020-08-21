@@ -14,7 +14,7 @@ class Controller {
     try {
       const id = Number(req.params.itemId)
       const items = await Item.update(
-        { stock: stock - 1 },
+        { stock: req.body.stock },
         {
         where: {id},
         returning: true
