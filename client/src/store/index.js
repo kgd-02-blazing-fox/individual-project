@@ -15,13 +15,14 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    fetchProducts (context) {
+    fetchItems (context) {
       ServerAPI({
         method: 'GET',
         url: '/'
       })
         .then(({ data }) => {
           context.commit('SET_ITEMS', data)
+          console.log(data)
         })
         .catch((err) => {
           console.log(err)
@@ -30,7 +31,7 @@ export default new Vuex.Store({
           console.log('FETCHED')
         })
     },
-    updateProduct (context, data) {
+    updateItem (context, data) {
       ServerAPI({
         method: 'PUT',
         url: '/' + data.id,
@@ -50,7 +51,7 @@ export default new Vuex.Store({
         })
         .catch((err) => {
           console.log(err)
-          router.push(`/`)
+          router.push('/')
         })
         .finally((_) => {
           console.log('what?')
