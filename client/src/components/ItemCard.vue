@@ -26,8 +26,8 @@
                 </div>
               </div>
             </div>
-            <div class="mt-1">
-              <a href="#" class="btn btn-dark"><i class="fas fa-cart-plus"></i> add to cart!</a>
+            <div class="m-1">
+              <a @click.prevent="add" href="#" class="btn btn-dark"><i class="fas fa-cart-plus"></i> add to cart!</a>
             </div>
           </div>
         </div>
@@ -38,6 +38,17 @@
 export default {
   name: 'ItemCard',
   props: ['item'],
+  methods: {
+    add () {
+      const payload = {
+        id: this.item.id,
+        name: this.item.name,
+        price: this.item.price,
+        stock: this.item.stock
+      }
+      this.$store.dispatch('addToChart', payload)
+    }
+  },
   computed: {
     priceInRupiah () {
       return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(this.item.price)
