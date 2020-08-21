@@ -10,8 +10,4 @@ app.use(cors())
 
 app.use('/', index);
 
-const PORT = 3000 
-
-app.listen(PORT, () => {
-  console.log(`online: ${PORT} !`);
-})
+module.exports = app
