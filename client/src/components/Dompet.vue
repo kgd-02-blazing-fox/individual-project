@@ -1,12 +1,16 @@
 <template>
   <div class="dompet">
-    <h3>Rp.1.000.000.000 left</h3>
+    <h3>{{ money }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-
+  computed: {
+    money () {
+      return this.$store.state.money
+    }
+  }
 }
 </script>
 

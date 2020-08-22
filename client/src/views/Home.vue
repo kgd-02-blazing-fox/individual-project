@@ -40,6 +40,7 @@ export default {
     this.socket = io.connect('http://localhost:3000')
 
     this.socket.on('init', function (payload) {
+      this.$store.commit('SET_MONEY', payload.money)
       console.log('money: Rp.', payload.money)
       console.log('products: ', payload.products)
       console.log('init invoked')
