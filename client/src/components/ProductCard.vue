@@ -1,12 +1,14 @@
 <template>
-  <div class="col-sm-4">
-    <img src="https://neal.fun/spend/images/big-mac.jpg" alt="">
+  <div class="card col-sm-4" style="padding-top:15px; padding-bottom:15px;">
+    <img :src="product.image_url" alt="" style="height: 8em;">
       <h5>{{ product.name }}</h5>
-      <p>Rp{{ product.harga }}</p>
+      <p>Rp{{ product.price }}</p>
       <div class="row">
         <div class="col-sm-6">
-          <button class="btn btn-outline-dark">{{ product.stock }}</button>
-          <button class="btn btn-success">Buy</button>
+          <button class="btn btn-outline-dark" style="min-width:100px;">{{ product.stock }}</button>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-success" @click.prevent="buyProduct({index,price,stock})">Buy</button>
         </div>
       </div>
   </div>
@@ -17,10 +19,18 @@ export default {
   name: 'ProductCard',
   props: {
     product: Object
+  },
+  methods: {
+    buyProduct (payload) {
+      this.$store.commit('BUY_PRODUCT', payload)
+      this.$emit('itemChanges', payload)
+    }
   }
 }
 </script>
 
 <style>
-
+  button{
+    min-width:100px;
+  }
 </style>
