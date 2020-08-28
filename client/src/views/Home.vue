@@ -47,8 +47,8 @@ export default {
     }
   },
   mounted () {
-    this.socket = io.connect('http://localhost:3000')
-
+    // this.socket = io.connect('http://localhost:3000')
+    this.socket = io.connect('https://individu-serve.herokuapp.com/')
     this.socket.on('init', (payload) => {
       this.$store.commit('SET_MONEY', payload.money)
       this.$store.commit('SET_PRODUCTS', payload.products)
