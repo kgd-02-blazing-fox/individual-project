@@ -1,6 +1,8 @@
 const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
+const cors = require("cors")
+app.use(cors())
 
 const money = 1000000000
 const products = [
@@ -30,6 +32,10 @@ io.on('connect', function (socket) {
   
   socket.on('new-message', function (payload) {
     console.log(payload)
+  })
+
+  socket.on("updated-item", (payload) => {
+    socket.broadcast.emit("updated", payload)
   })
 })
 

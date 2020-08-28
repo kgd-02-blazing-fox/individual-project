@@ -16,7 +16,10 @@ export default new Vuex.Store({
       state.products = allProduct
     },
     BUY_PRODUCT (state, payload) {
-      state.money -= payload.price
+      console.log('Hai juga', payload.index)
+      console.log('Hai juga', payload.product.price)
+      console.log('Hai juga', state.products[payload.index].stock)
+      state.money -= payload.product.price
       state.products[payload.index].stock--
     }
   },

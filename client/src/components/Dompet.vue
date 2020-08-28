@@ -1,6 +1,6 @@
 <template>
   <div class="dompet">
-    <h3>{{ money }}</h3>
+    <h3>Rp. {{ money }}</h3>
   </div>
 </template>
 
@@ -8,7 +8,15 @@
 export default {
   computed: {
     money () {
-      return this.$store.state.money
+      const numberString = this.$store.state.money.toString()
+      const sisa = numberString.length % 3
+      let rupiah = numberString.substr(0, sisa)
+      const ribuan = numberString.substr(sisa).match(/\d{3}/g)
+      if (ribuan) {
+        const separator = sisa ? '.' : ''
+        rupiah += separator + ribuan.join('.')
+      }
+      return rupiah
     }
   }
 }
@@ -19,6 +27,6 @@ export default {
     background-color: green;
     color: white;
     padding: 25px;
-    max-width: 900px;
+    max-width: 1200px;
   }
 </style>
